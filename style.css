@@ -1,0 +1,175 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+/* body {
+    
+    background: linear-gradient(to bottom, #15bac6, #134fb0);
+   
+} */
+ html, body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom,
+#12c2e9,
+ #c471ed ,#f64f59);
+    color : white;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: hsla(113, 49%, 45%, 0.745); */
+    /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.05)); */
+background: linear-gradient(135deg, rgba(125, 125, 77, 0.85), rgba(3, 3, 3, 0.6));
+color: #fff;
+
+
+   
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 350px;
+    padding: 40px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.search input {
+
+    width: 80%;
+    padding: 10px 20px;
+    border: 0;
+    /* background: rgba(224, 216, 216, 0.2); */
+    background: rgba(216, 218, 225, 0.2);
+    color: #051928;
+    outline: 0;;
+    border-radius: 30px;
+    margin-right: 10px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+    outline: none;
+}
+.search input::placeholder {
+    color: white
+}
+.search button {
+    height:  60px;
+    width:  60px;
+    border: none;
+    /* background: #15bac6; */
+    /* background: linear-gradient(to bottom, #15bac6, #17c060); */
+    background: linear-gradient(135deg, rgba(125, 125, 77, 0.85), rgba(3, 3, 3, 0.6));
+color: #fff;
+background: rgb(246, 237, 237);
+
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(255, 10, 10, 0.1);
+    transition: background 0.3s ease;
+
+}
+.search button:hover {
+    background: #000000;
+}
+.search button img {
+    width: 30%  ;
+    height: 30%;
+    object-fit: cover;
+    color: white;
+}
+/* .weather-icon {
+    width : 10px;
+    margin-top: 3rem;
+
+} */
+ .weather-icon {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* Add space between image and temperature */
+}
+
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.temp {
+    font-size: 64px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1px;
+    margin-top: 0.1rem;
+}
+.city {
+    font-size: 32px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.1rem;
+    padding:  0 20px;
+    align-items: center;
+    gap: 4rem;
+}
+.details .col {
+    display: flex;
+    align-items: center;
+}
+.details .col img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.weather h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+
+
+}
+.weather h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+} 
+.details .col div p:first-child {
+    margin-top: 8px; /* spacing above the label, e.g. "Humidity" */
+}
+
+.details .col div p:last-child {
+    margin-top: 5px; /* spacing above the value, e.g. "78%" or "15 km/h" */
+}
+
