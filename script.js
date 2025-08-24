@@ -40,7 +40,7 @@ async function fetchWeather(city) {
       newIcon = isNight ? "raining_moon.png" : "rain.png";
     }
     else if (condition === "Clear") {
-      newIcon = isNight ? "half-moon.png" : "clear.png";
+      newIcon = isNight ? "moon_clear.png" : "clear.png";
     }
     else if (condition === "Mist" || condition === "Haze" || condition === "Fog") {
       newIcon = "mist.png";
